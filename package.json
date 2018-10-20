@@ -1,0 +1,22 @@
+{
+  "name": "waifu-fetcher",
+  "version": "1.0.0",
+  "description": "Fetch a random waifu!",
+  "main": "getWaifu.js",
+  "scripts": {
+    "start": "node getWaifu.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run client\""
+  },
+  "author": "Salies",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}

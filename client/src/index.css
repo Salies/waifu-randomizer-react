@@ -1,0 +1,160 @@
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    width:100%;
+    min-height:100vh;
+    background-color:#311b92;
+}
+
+header{
+    padding:25px;
+    text-align:center;
+    color:#fff;
+    font-size:calc(100% + 3vw);
+    font-weight:700;
+}
+
+.btn{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    color:#fff;
+    background-color:#00e676;
+    font-size:25px;
+    font-weight:700;
+    line-height:60px;
+    text-align:center;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.btn:hover{
+    background-color:#00b248;
+}
+
+.btn:active{
+    color:#000;
+}
+
+.description{
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    font-size: .75em;
+    color: #eee;
+    padding: 25px;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.dToggle{
+    position:absolute;
+    width:25px;
+    height:25px;
+    bottom:5px;
+    right:5px;
+    background-color:rgba(255,255,255,0.5);
+    font-weight:700;
+    color:rgba(0,0,0,0.75);
+    text-align: center;
+    line-height:25px;
+    border-radius:50%;
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.waifu{
+    position:relative;
+    width:calc(100% - 50px);
+    max-width:750px;
+    margin:0 auto;
+    height:60vh;
+    padding:25px;
+    overflow-y: auto;
+    transition:.5s;
+}
+
+.image, .info{
+    float:left;
+}
+
+.image{
+    position: relative;
+    width:50%;
+    height:auto;
+    max-height:100%;
+    margin-right:25px;
+    overflow:hidden;
+}
+
+.image img{
+    display:block;
+    width:100%;
+}
+
+.name{
+    text-transform: uppercase;
+    color:#fff;
+    font-size:2em;
+    line-height: 1em;
+}
+
+.from{
+    color:rgba(255,255,255,0.75);
+    font-size:1em;
+    margin-top:-3px;
+    margin-bottom:15px;
+}
+
+.info{
+    max-width:calc(50% - 25px);
+    float:left;
+}
+
+.info section span:first-of-type{
+    font-size:.75em;
+    color:rgba(255,255,255,0.75);
+    text-transform: uppercase;
+}
+
+.info section span:nth-of-type(2){
+    font-size:1em;
+    color:#eceff1;
+}
+
+.hide{
+    display:none;
+}
+
+.transparent{
+    opacity:0;
+}
+
+.loading{
+    position:absolute;
+    top:5px;
+    width:100%;
+    text-align:center;
+    font-weight:700;
+    color:#fff;
+}
+
+@media screen and (max-width:625px){
+    header{
+        background-color:#000063;
+    }
+
+    .image, .info{
+        max-width:none;
+        width:100%;
+        float:none;
+    }
+    .name{
+        margin-top:25px;
+    }
+}
